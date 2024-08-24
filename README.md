@@ -35,15 +35,15 @@ Instead of simplifying the problem to a simple sorting issue, we set the objecti
 
 Assuming the Gordon Growth Model to estimate expected returns using dividend growth rate ($g\%$), the equation can be expressed as:
 
-$ E(p) = \sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) $
+$E(p) = \sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i)$
 
-$ sigma_p = \sqrt{\sum_{i}\sum_{j} w_i w_j \{Cov}(t_i, t_j)} $
+$sigma_p = \sqrt{\sum_{i}\sum_{j} w_i w_j \{Cov}(t_i, t_j)}$
 
 For $R_f$, we typically use the yield of risk-free assets, such as government bonds. However, for simplicity, we assume $R_f = 0.01$ in this study.
 
 Thus, the final objective function becomes:
 
-$ Max \frac{\sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) - 0.01}{\sqrt{\sum_{i}\sum_{j} w_i w_j \text{Cov}(t_i, t_j)}} $
+$Max \frac{\sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) - 0.01}{\sqrt{\sum_{i}\sum_{j} w_i w_j \text{Cov}(t_i, t_j)}}$
 
 ### Constraints
 
