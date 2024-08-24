@@ -25,7 +25,7 @@ We will collect historical data for each ticker from [Yahoo Finance](https://fin
 
 Our primary objective is to maximize the Sharpe Ratio, which can be represented by the following formula:
 
-$Max Sharpe = \frac{R_p - R_f}{\sigma_p}$
+$Max  Sharpe = \frac{R_p - R_f}{\sigma_p}$
 
 - $R_p$: Expected return of the portfolio
 - $R_f$: Risk-free return
@@ -37,13 +37,13 @@ Assuming the Gordon Growth Model to estimate expected returns using dividend gro
 
 $ E(p) = \sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) $
 
-$ \sigma_p = \sqrt{\sum_{i}\sum_{j} w_i w_j \text{Cov}(t_i, t_j)} $
+$ sigma_p = \sqrt{\sum_{i}\sum_{j} w_i w_j \{Cov}(t_i, t_j)} $
 
 For $R_f$, we typically use the yield of risk-free assets, such as government bonds. However, for simplicity, we assume $R_f = 0.01$ in this study.
 
 Thus, the final objective function becomes:
 
-$ \text{Max} \frac{\sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) - 0.01}{\sqrt{\sum_{i}\sum_{j} w_i w_j \text{Cov}(t_i, t_j)}} $
+$ Max \frac{\sum_{i} g_i w_i + \sum_{i} w_i d_i (1 + g_i) - 0.01}{\sqrt{\sum_{i}\sum_{j} w_i w_j \text{Cov}(t_i, t_j)}} $
 
 ### Constraints
 
