@@ -25,7 +25,7 @@ We will collect historical data for each ticker from [Yahoo Finance](https://fin
 
 Our primary objective is to maximize the Sharpe Ratio, which can be represented by the following formula:
 
-$Max Sharpe = {R_p - R_}/sigma_p$
+$Max Sharpe = {R_p - R_f}/sigma_p$
 
 - $R_p$: Expected return of the portfolio
 - $R_f$: Risk-free return
